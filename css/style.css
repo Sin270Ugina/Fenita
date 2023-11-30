@@ -372,17 +372,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 }
-.nav__list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.nav__item:not(:last-child) {
-  margin: 0 21px 0 0;
-}
 .nav__link {
-  text-decoration: none;
   color: #24A3FF;
   font-size: 16px;
   line-height: 1.33;
@@ -403,9 +393,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link_grey:hover, .nav__link_grey:focus {
   color: #fff;
   background-color: #f0145A;
-}
-.nav__link_grey__list_top {
-  margin-top: -10px;
 }
 
 .intro {
@@ -481,22 +468,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .achievements {
   background-color: #F5F5FA;
+  text-align: center;
+  padding: 2%;
 }
 .achievements__title {
-  display: flex;
-  align-items: center;
   font-size: 16px;
   color: #000;
   gap: 20px;
 }
+.achievements__icon_law {
+  border-radius: 12px;
+}
 .achievements__icon {
   display: inline-flex;
+  justify-content: center;
+  gap: 10px;
 }
 .achievements__icon_circle {
-  width: 16px;
-  height: 16px;
-  background: rgba(36, 164, 255, 0.2);
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
+  background-color: rgba(98, 183, 240, 0.2);
+  display: inline-flex;
+  justify-content: center;
 }
 .achievements__icon_circle_active {
   color: #24A3FF;
@@ -505,6 +499,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #24A3FF;
 }
 
+@media screen and (max-width: 1200px) {
+  .achievements__icon {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .achievements__icon {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .achievements__icon {
+    max-width: 138px;
+  }
+}
 .footer__menu {
   display: flex;
   flex-direction: column;

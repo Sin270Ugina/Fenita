@@ -1,0 +1,19 @@
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.nav__list{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+}
+.nav__link{
+  text-decoration: none;
+}
+/*@media screen and  (max-width: 768px){
+.achievements__icon{
+      max-width: 138px;
+  }
+}*/
